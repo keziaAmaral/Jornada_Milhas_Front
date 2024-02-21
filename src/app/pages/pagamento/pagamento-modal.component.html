@@ -1,0 +1,10 @@
+<h2 mat-dialog-title>Escolha o método de pagamento</h2>
+<mat-dialog-content>
+  <mat-radio-group [(ngModel)]="tipoDePagamento">
+    <mat-radio-button value="pix">PIX</mat-radio-button>
+    <mat-radio-button value="cartao">Cartão</mat-radio-button>
+  </mat-radio-group>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="efetuarPagamento()">Confirmar</button>
+</mat-dialog-actions>

@@ -1,0 +1,11 @@
+<mat-card class="card-busca">
+  <mat-card-content>
+    <ul>
+      <li>{{destino.nome}}</li>
+      <li>R$ {{destino.preco }}</li>
+    </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-flat-button color="primary" (click)="abrirModalPagamento(destino.preco)">COMPRAR</button>
+  </mat-card-actions>
+</mat-card>
